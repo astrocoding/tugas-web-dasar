@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+.header {
+    min-height: 50px;
+    text-align: center;
+}
+.logo img {
+    width: 150px;
+    margin: 0;
+}
+.logo h1 {
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%, #fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu ul {
+    padding: 0;
+    padding-bottom: 5px;
+}
+.menu ul li {
+    display: inline-block;
+    position: relative;
+}
+.menu ul li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(5, 23, 44);
+}
+ul .submenu {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    text-align: left;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    display: none;
+}
+.menu ul li:hover > ul.submenu {
+    display: block;
+    z-index: 5;
+}
+ul .submenu li {
+    display: block;
+}
+ul .submenu li a {
+    display: block;
+    padding: 5px 10px;
+    font-weight: 500;
+    color:rgb(5, 23, 44);
+}
+ul .submenu li a:hover {
+    background-color: #aaa;
+}
+.jumbotron {
+    width: 100%;
+    height: 350px;
+    background-color: #aaa;
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+}
+.jumbotron h2, .jumbotron p {
+    position: relative;
+    padding: 10px;
+}
+.jumbotron h2 {
+    color: #eee;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    background-color: black;
+    opacity: 0.4;
+}
+.content {
+    background-color: #0E1816;
+    min-height: 500px;
+    overflow: auto;
+}
+.content .title {
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%, #fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.thumbnail {
+    background: rgb(211, 204, 204);
+    text-align: center;
+    padding: 10px;
+    width: 270px;
+    margin: 15px;
+    float: left;
+    border-radius: 10px;
+}
+.thumbnail img {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+}
+.thumbnail h2 {
+    color:rgb(46, 43, 43);
+    padding-bottom: 5px;
+}
+.footer {
+    background-color: rgb(5, 23, 44);
+    min-height: 50px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #fff;
+}
